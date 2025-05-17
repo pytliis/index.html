@@ -463,7 +463,7 @@
             // Job label
             const jobLabel = document.createElement('div');
             jobLabel.className = 'job-label';
-            jobLabel.textContent = `Praca ${job}`;
+            jobLabel.textContent = `${job}`;
             container.appendChild(jobLabel);
             
             // Time selector
@@ -701,12 +701,12 @@
                         
                         // Job 1 cell
                         const job1Cell = document.createElement('td');
-                        job1Cell.appendChild(createTimeSelectors(dayString, '1'));
+                        job1Cell.appendChild(createTimeSelectors(dayString, 'KFC'));
                         job1Row.appendChild(job1Cell);
                         
                         // Job 2 cell
                         const job2Cell = document.createElement('td');
-                        job2Cell.appendChild(createTimeSelectors(dayString, '2'));
+                        job2Cell.appendChild(createTimeSelectors(dayString, 'TEATR'));
                         job2Row.appendChild(job2Cell);
                         
                         date++;
